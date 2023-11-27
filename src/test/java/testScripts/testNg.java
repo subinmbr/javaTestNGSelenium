@@ -26,6 +26,7 @@ public class testNg {
 	  softassert.assertEquals(driver.getTitle(),"GoogleTest" );
 	  
 	  System.out.println("pririty 3 api someting");
+	  System.out.println("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");
 	  
 	  
 	  driver.close();
