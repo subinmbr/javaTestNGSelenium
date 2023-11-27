@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="sampleSuite">
-<groups>
-<run>
-<include name ="featureOne"/>
+<suite name="Suite" thread-count="3" parallel="tests">
 
-</run>
-</groups>
-<classes>
-<class name= "testScripts.sampleFourTest"/>
-<class name= "testScripts.sampleThreeTest"/>
-</classes>
-
-
-  <test thread-count="5" name="TestNGScripts">
-  </test> <!-- TestNGScripts -->"sampleSuite"<suite-files></suite-files>
+<parameter name="browser" value="chrome"></parameter>
+  <test  name="Moduleone">
+   <classes>
+      <class name="parellelScripts.sampleFive"/>
+  
+    </classes>
+   
+  </test> 
+  
+  <test  name="Moduletwo">
+   <classes>
+      <class name="parellelScripts.samplethree"/>
+      <class name="parellelScripts.sampleFourTest"/>
+    </classes>
+   
+  </test>
+  
+  <!-- Test -->
 </suite> <!-- Suite -->
